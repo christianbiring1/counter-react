@@ -4,6 +4,11 @@ class Counter extends Component {
     count: 0,
   };
 
+  constructor() {
+    super()
+    this.handleIncrement = this.handleIncrement.bind(this);
+  }
+
   styles = {
     fontSize: 16,
     fontWeight: 'bold',
@@ -20,11 +25,15 @@ class Counter extends Component {
     return classes;
   }
 
+  handleIncrement() {
+    console.log(this);
+  }
+
   render() { 
     return (
       <React.Fragment>
       <span style = {this.styles} className={this.getBadgeColor()}>{this.formatCount()}</span>
-      <button className='btn btn-secondary btn-sm'>Increment</button>
+      <button className='btn btn-secondary btn-sm' onClick={ this.handleIncrement }>Increment</button>
       </React.Fragment>
     );
   }
