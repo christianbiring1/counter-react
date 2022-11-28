@@ -4,10 +4,10 @@ class Counter extends Component {
     count: 0,
   };
 
-  constructor() {
-    super()
-    this.handleIncrement = this.handleIncrement.bind(this);
-  }
+  // constructor() {
+  //   super()
+  //   this.handleIncrement = this.handleIncrement.bind(this);
+  // }
 
   styles = {
     fontSize: 16,
@@ -25,7 +25,11 @@ class Counter extends Component {
     return classes;
   }
 
-  handleIncrement() {
+  // handleIncrement() {
+  //   console.log(this);
+  // }
+
+  handleIncrement = () => {
     console.log(this);
   }
 
