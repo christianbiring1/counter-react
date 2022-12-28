@@ -55,7 +55,7 @@ end
 
 # Input examples:
 p letter_avatar({id: 23, first_names: 'Robert', last_name: 'Bose'})
-p letter_avatar({id: 23, first_names: nil, last_name: nil})
+p letter_avatar({id: 23, first_names: 'Rob', last_name: nil})
 # {initials: ‘RB’, color: ‘blue’} (The color doesn’t need to be blue in this case, but the initials should be exactly that)
 
 
